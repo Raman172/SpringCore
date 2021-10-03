@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-init-method="initialize" default-destroy-method="destruct" 
+
+xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<bean id="t" class="beanlifecycledefaultglobal.Test" >
+		<property name="modelYear" value="1999"/>
+	</bean>
+	<bean id="t2" class="beanlifecycledefaultglobal.Test2">
+		<property name="modelYear" value="1997"/>
+	</bean>
+     
+     
+</beans>

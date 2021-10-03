@@ -1,0 +1,29 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="listSetMap" class="listsetmap.ListSetMap">
+		<property name="fruits">
+			<list>
+				<value>Apple</value>
+				<value>Banana</value>
+				<value>Orange</value>
+			</list>
+		</property>
+		<property name="cricketers">
+			<set>
+				<value>Sachine</value>
+				<value>Sehwag</value>
+				<value>Sachine</value>
+			</set>
+		</property>
+		<property name="mpCountriesCapital">
+			<map>
+				<entry key="India" value="delhi"></entry>
+				<entry key="India" value="delhi"></entry>
+				<entry key="India" value="delhi"></entry>
+			</map>
+		</property>
+	</bean>
+
+</beans>

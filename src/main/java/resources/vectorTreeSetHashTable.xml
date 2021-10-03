@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+<!-- <bean/> definitions here -->
+	<bean id="vectorTreeSetHashTable" class="vectorTreeSetHashTable.VectorTreeSetHashTable">
+		<property name="fruits">
+			<util:list list-class="java.util.Vector">
+				<value>Apple</value>
+				<value>Banana</value>
+				<value>Orange</value>
+			</util:list>
+		</property>
+		<property name="cricketers">
+			<util:set set-class="java.util.TreeSet">
+				<value>Sachine</value>
+				<value>Sehwag</value>
+				<value>Sachine</value>
+			</util:set>
+		</property>
+		<property name="mpCountriesCapital">
+			<util:map map-class="java.util.Hashtable">
+				<entry key="India" value="delhi"></entry>
+				<entry key="India" value="delhi"></entry>
+				<entry key="India" value="delhi"></entry>
+			</util:map>
+		</property>
+	</bean>
+
+
+</beans>

@@ -1,0 +1,14 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="props" class="properties.Proper">
+		<property name="props">
+			<props>
+				<prop key="driver">drivervalue</prop>
+				<prop key="url">urlvalue</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>
